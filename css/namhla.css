@@ -1,0 +1,50 @@
+.the_box {
+  color: black;
+  background-color: cornsilk;
+  margin: 1em;
+  padding: 1em;
+  border: 3px solid darkviolet;
+}
+.name {
+    color: black;
+}
+
+ .clearfix { 
+    overflow: auto;
+     zoom: 1;
+}
+
+.cape {
+    display: flex;
+    
+  }
+  .places{
+    flex: 1;
+}
+  .places img {
+    width: 150px;
+  }
+    .content {
+        display: flex;
+         }
+         
+.cape {
+  display: flex;
+}
+ 
+@media(min-width: 800px) {
+  .the_box {
+    color: black;
+    background-color: cornsilk;
+    margin: 1em;
+    padding: 1em;
+    border: 3px solid darkviolet;
+  }
+  .para {
+    display: flex;
+  }
+  .namhla {
+    display: flex;
+  }
+
+}
