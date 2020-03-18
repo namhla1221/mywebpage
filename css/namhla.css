@@ -12,8 +12,11 @@
  .clearfix { 
     overflow: auto;
      zoom: 1;
-}
-
+ }
+ .bomkazi{
+   margin: 1em;
+   overflow: hidden;
+ }
 .cape {
     display: flex;
     
@@ -31,6 +34,7 @@
 .cape {
   display: flex;
 }
+
  
 @media(min-width: 800px) {
   .the_box {
