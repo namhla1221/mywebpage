@@ -2,134 +2,228 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="./css/namhla.css">
+
     <meta charset="UTF-8">
-    <meta name="viewport" cont width="300" height="300"ent="width=device-width, initial-csale=1.0">
+    <meta name="viewport" cont width="300" height="300" ent="width=device-width, initial-csale=1.0">
     <title>Document</title>
+
 </head>
 <style>
+    .container {
+        color: black;
+        background-color: cornsilk;
+        margin: 1em;
+        padding: 1em;
+        border: 3px solid darkviolet;
+    }
+
+    .clearfix {
+        overflow: auto;
+        zoom: 1;
+    }
+
+    .name {
+        color: black;
+    }
+
+    .bomkazi {
+        margin: 1em;
+        overflow: hidden;
+    }
+
+    .cape {
+        display: flex;
+
+    }
+
+    .places {
+        flex: 1;
+        
+    }
+
+    .content {
+        display: flex;
+    }
+
+    /* https://stackoverflow.com/questions/37609642/why-does-flexbox-stretch-my-image-rather-than-retaining-aspect-ratio */
+    /* googled - "flexbox don't stretch image" */
+
+    .content img {
+        align-self:flex-start;
+    }
+
+    .places img {
+        width: 150px;
+    }
+
+    .cape {
+        display: flex;
+    }
+
+    @media(min-width: 800px) {
+        .container {
+            color: black;
+            background-color: cornsilk;
+            margin: 1em;
+            padding: 1em;
+            border: 3px solid darkviolet;
+        }
+
+
+        .namhla {
+            display: flex;
+        }
+
+        .cape {
+            display: flex;
+        }
+
+
+    }
+
     table,
     th,
     td {
         border: 1px solid violet;
     }
-   
-   
 </style>
 
 <body>
     <div class="container">
-  <div class="clearfix">
+        <div class="clearfix">
 
 
-         <div class="name clearfix"> 
+            <div class="name clearfix">
 
-            <h1>Namhla</h1>
-            <h1>Mthi</h1>
-
-            <img src="table1.jpg" style="float: right;">
-         </div>
+                <h1>Namhla</h1>
+                <h1>Mthi</h1>
 
 
 
-
-    <div class="bomkazi">
-        <div class="city">
-            <h1>Which City?</h1>
-      
-        <img src="paris.jpg"  style="float: left;">
-      <h2>Paris</h2>
-            <p> Thomas Jefferson once said “a walk about Paris will provide lessons in history, beauty, and in the point of life.”
-               Paris is Known as the “City of Light” or the “City of Love,” the streets of Paris overflow with culture, art, beauty, and history.
-               Paris was originally a Roman City called “Lutetia.”
-                It’s believed that Paris only has one stop sign in the entire city.
-                The craziness of driving in Paris rivals other major cities like Rome, and you have to have nerves of steel to do so. The fact that the city only has ONE stop sign probably won’t encourage you.
-               There are at least three replicas of the Statue of Liberty in Paris. The most famous of them exists on an island in the middle of the Seine and looks towards her sister statue in New York.
-            </p>
+                <img src="table1.jpg" style="float: right;">
             </div>
-        
-    </div>
-
-
-        
-        <h2>A foreign language</h2>
-        <div class="para">
-        <table width="400">
-
-            <tr>
-                <th>English Phrase</th>
-                <th>Foreign Language</th>
-            </tr>
-            <tr>
-                <td> hello my name is Namhla</td>
-                <td> Hola, mi nombre es Namhla</td>
-            </tr>
-
-                <td>What is your name ?</td>
-                <td>¿Cómo te llamas? </td>
-            </tr>
-            <tr>
-                <td>Where is the bathroom?</td>
-                <td>¿Qué hora es</td>
-            </tr>
-        </table>
-    </div>
 
 
 
-    
-        <div class="historical-places clearfix ">
-        <h2>Historical places in Cape Town</h2>
-        
-        <div class="cape ">
-        
-            <div class="namhla">
-        <div class="places">
-        
-        <h2>Castle of Good Hope</h2>
-        
-        <div class="content">
 
-                <ul>
-                    <li> The Castle of Good Hope, is a pentagonal fortress built by Dutch colonialists in the 17th century.</li>        
-                    <li> It was used to announce the time, as well as warning citizens in case of danger, since it could be heard 10 kilometres away. It was also rung to summon residents and soldiers when important announcements needed to be made.</li>
-                    <li> Yellow paint was originally chosen for the walls because it reduced the effects of the hot African sun</li>
-                    </ul>
-                <img src="museum.jpg">
+
+            <div class="bomkazi clearfix">
+                <div class="city">
+                    <h1>Which City?</h1>
+
+                    <img src="paris.jpg" style="float: left;">
+                    <h2>Paris</h2>
+                    <p> Thomas Jefferson once said “a walk about Paris will provide lessons in history, beauty, and in
+                        the point of life.”
+                        Paris is Known as the “City of Light” or the “City of Love,” the streets of Paris overflow with
+                        culture, art, beauty, and history.
+                        Paris was originally a Roman City called “Lutetia.”
+                        It’s believed that Paris only has one stop sign in the entire city.
+                        The craziness of driving in Paris rivals other major cities like Rome, and you have to have
+                        nerves of steel to do so. The fact that the city only has ONE stop sign probably won’t encourage
+                        you.
+                        There are at least three replicas of the Statue of Liberty in Paris. The most famous of them
+                        exists on an island in the middle of the Seine and looks towards her sister statue in New York.
+                    </p>
+                </div>
+
             </div>
-        </div>
-        <div class="places">
-            
-        <h3>Museum</h3>
-        
-        <div class="content">
-                <ul>
-                   
-                    <li>District Six Foundation was founded in 1989 and the museum in 1994, as a memorial to the forced movement of 60,000 inhabitants of various races in District Six during Apartheid in South Africa in the 1970s.</li>
-                    <li>The museum is dedicated to the construction of housing, environmental planning, and the organisation of music, literature, and art activities, with the active involvement of the public. </li>
-                    <li> The museum's goal is to join people into a community where there is respect for dignity, identity and the co-existence of different races.</li>
-                    </ul>
-                    <img src="district6.jpg"  >
-        </div>
-    </div>
-        <div class="places">
-            
-        <h3>City Hall</h3>
-        
-        <div class="content">
-                <ul>
-                    <li>Cape Town City Hall is a large Edwardian building in Cape Town city centre which was built in 1905.  </li>
-                    <li>The tower of the City Hall has a Turret Clock which strikes the hours and chimes the Westminster quarters.  </li>
-                    <li>On 24 July 2018, a statue of Nelson Mandela on the balcony overlooking the Grand Parade was unveiled. It was on the same spot where he made a speech when he was released from prison on 11 February 1990 </li>
-                </ul>
-                <img src="hall.jpg" >
-                </div> 
+
+
+
+            <h2>A foreign language</h2>
+            <div class="para clearfix">
+                <table width="400">
+
+                    <tr>
+                        <th>English Phrase</th>
+                        <th>Foreign Language</th>
+                    </tr>
+                    <tr>
+                        <td> hello my name is Namhla</td>
+                        <td> Hola, mi nombre es Namhla</td>
+                    </tr>
+
+                    <td>What is your name ?</td>
+                    <td>¿Cómo te llamas? </td>
+                    </tr>
+                    <tr>
+                        <td>Where is the bathroom?</td>
+                        <td>¿Qué hora es</td>
+                    </tr>
+                </table>
+            </div>
+
+
+
+
+            <div class="historical-places clearfix ">
+                <h2>Historical places in Cape Town</h2>
+
+                <div class="cape">
+
+                    <div class="namhla">
+                        <div class="places">
+                            <h2>Castle of Good Hope</h2>
+
+                            <div class="content">
+
+
+                                <img src="museum.jpg">
+                                <ul>
+                                    <li> The Castle of Good Hope, is a pentagonal fortress built by Dutch colonialists
+                                        in the 17th century.</li>
+                                    <li> It was used to announce the time, as well as warning citizens in case of
+                                        danger, since it could be heard 10 kilometres away. It was also rung to summon
+                                        residents and soldiers when important announcements needed to be made.</li>
+                                    <li> Yellow paint was originally chosen for the walls because it reduced the effects
+                                        of the hot African sun</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="places">
+                            <h3>Museum</h3>
+
+                            <div class="content">
+
+
+                                <img src="district6.jpg">
+                                <ul>
+
+                                    <li>District Six Foundation was founded in 1989 and the museum in 1994, as a
+                                        memorial to the forced movement of 60,000 inhabitants of various races in
+                                        District Six during Apartheid in South Africa in the 1970s.</li>
+                                    <li>The museum is dedicated to the construction of housing, environmental planning,
+                                        and the organisation of music, literature, and art activities, with the active
+                                        involvement of the public. </li>
+                                    <li>
+
+
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="places">
+                            <h3>City Hall</h3>
+                            <div class="content">
+                                
+                                 <img src="hall.jpg">
+                                <ul>
+                                    <li>Cape Town City Hall is a large Edwardian building in Cape Town city centre which
+                                        was built in 1905. </li>
+                                    <li>The tower of the City Hall has a Turret Clock which strikes the hours and chimes
+                                        the Westminster quarters. </li>
+                                    <li>On 24 July 2018, a statue of Nelson Mandela on the balcony overlooking the Grand
+                                        Parade was unveiled. It was on the same spot where he made a speech when he was
+                                        released from prison on 11 February 1990 </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                </div>
-        </div>
-        </div>
-    </div>
-</div>
+            </div>
 
 </body>
 
